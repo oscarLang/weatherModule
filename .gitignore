@@ -1,0 +1,8 @@
+/.bin
+/build
+/vendor
+memory::
+composer.lock
+/config/ipstack.php
+/config/apikeys.php
+/a
