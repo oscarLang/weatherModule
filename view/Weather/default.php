@@ -40,7 +40,6 @@ $i = 0;
     <div id="mapid" style="height:360px;"></div>
     <?php if ($forecast) : ?>
         <script type="text/javascript">
-            import "leaflet/dist/leaflet.css";
             var mymap = L.map('mapid').setView([<?=$for["latitude"]?>, <?=$for["longitude"]?>], 13);
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
             {
