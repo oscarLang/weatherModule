@@ -1,0 +1,25 @@
+{
+  "name": "weathermodule",
+  "version": "1.0.0",
+  "description": "## Copy the configuration files rsync -av vendor/osln/weather/config ./",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oscarLang/weatherModule.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oscarLang/weatherModule/issues"
+  },
+  "homepage": "https://github.com/oscarLang/weatherModule#readme",
+  "dependencies": {
+    "leaflet": "^1.6.0"
+  }
+}
