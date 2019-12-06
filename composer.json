@@ -1,6 +1,6 @@
 {
     "name" : "osln/weather",
-    "description": "A me page for the ramverk1 course.",
+    "description": "A module for displaying weather",
     "license": "MIT",
     "minimum-stability": "beta",
     "prefer-stable": true,
