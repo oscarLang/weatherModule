@@ -1,4 +1,6 @@
-# Install
+#!/usr/bin/env bash
+#
+# Install weather module in anax directory
 
 ## Copy the configuration files
 rsync -av vendor/osln/weather/config ./
