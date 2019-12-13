@@ -6,7 +6,7 @@ use Anax\Commons\ContainerInjectableInterface;
 use Anax\Commons\ContainerInjectableTrait;
 
 // use Anax\Route\Exception\ForbiddenException;
-// use Anax\Route\Exception\NotFoundException;
+use Anax\Route\Exception\NotFoundException;
 // use Anax\Route\Exception\InternalErrorException;
 
 /**
@@ -32,7 +32,6 @@ class WeatherController implements ContainerInjectableInterface
     {
         $page = $this->di->get("page");
         $session = $this->di->get("session");
-
         $data = [
             "title" => "Väder",
             "forecast" => $session->has("forecast") ? $session->get("forecast") : "",
@@ -40,6 +39,8 @@ class WeatherController implements ContainerInjectableInterface
             "error" => $session->has("error") ? $session->get("error") : "",
             "location" => "",
         ];
+        $dumo = implode(",", $this->di->getActiveServices());
+        var_dump($dumo);
         $page->add("osln/weather/default", $data);
         $session->delete("error");
         return $page->render();

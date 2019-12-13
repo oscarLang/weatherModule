@@ -42,7 +42,7 @@ class Weather implements ContainerInjectableInterface
     {
         $times = [];
         $now = time();
-        for ($i=0; $i < 30; $i++) {
+        for ($i=0; $i < 3; $i++) {
             $now -= (24 * 60 * 60);
             $times[] = $now;
         }
