@@ -6,6 +6,8 @@ The module can be installed by running a postprocces script
 `bash /vendor/osln/weather/.anax/scaffold/postprocces.d/350_weather.bash`
 # Manual installation
 
+Stand in the root directory of the anax framework.
+
 1: Copy the configuration files
 
 `rsync -av vendor/osln/weather/config ./`
@@ -18,7 +20,7 @@ The module can be installed by running a postprocces script
 
 `cd $PWD/vendor/osln/weather/ | npm install`
 
-4: copy leaflet css files
+4: Copy leaflet css files and images
 
 `rsync -av vendor/osln/weather/node_modules/leaflet/dist/leaflet.css htdocs/css/`
 
