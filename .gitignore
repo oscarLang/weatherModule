@@ -1,8 +1,11 @@
 /.bin
 /build
 /vendor
+/cache
 memory::
 composer.lock
 /config/ipstack.php
 /config/apikeys.php
 /a
+/test/config/apikeys.php
+/node_modules
