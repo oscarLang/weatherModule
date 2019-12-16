@@ -3,11 +3,11 @@
 # Install weather module in anax directory
 
 ## Copy the configuration files
-rsync -av vendor/osln/weather/config/di /config/di
-rsync -av vendor/osln/weather/config/router /config/router
+rsync -av vendor/osln/weather/config/di/ ./config/di
+rsync -av vendor/osln/weather/config/router ./config/router/
 
 ## Copy the view files
-rsync -av vendor/osln/weather/view/ view/osln/
+rsync -av vendor/osln/weather/view/ view/osln/weather
 
 ## Install leaflet
 cd $PWD/vendor/osln/weather/ | npm install
