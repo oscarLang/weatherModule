@@ -1,3 +1,6 @@
+## V1.0.7
+
+Added REVISION.md and LICENSE.md
 ## V1.0.6
 
 Fixed all dependencies
