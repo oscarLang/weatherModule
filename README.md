@@ -10,7 +10,9 @@ Stand in the root directory of the anax framework.
 
 1: Copy the configuration files
 
-`rsync -av vendor/osln/weather/config ./`
+`rsync -av vendor/osln/weather/config/di /config/di`
+
+`rsync -av vendor/osln/weather/config/router /config/router`
 
 2: Copy the view files
 

@@ -15,16 +15,17 @@ class WeatherControllerTest extends TestCase
         global $di;
 
         // Setup di
-        $di = new DIFactoryConfig();
-        $di->loadServices(ANAX_INSTALL_PATH . "/config/di");
-        $di->loadServices(ANAX_INSTALL_PATH . "/test/config/di");
+        $this->di = new DIFactoryConfig();
+        $this->di->loadServices(ANAX_INSTALL_PATH . "/config/di");
+        $this->di->loadServices(ANAX_INSTALL_PATH . "/test/config/di");
         // Use a different cache dir for unit test
-        $di->get("cache")->setPath(ANAX_INSTALL_PATH . "/test/cache");
+        $this->di->get("cache")->setPath(ANAX_INSTALL_PATH . "/test/cache");
 
         // $di->setShared("weather", "Osln\Weather\WeatherMock");
 
         // View helpers uses the global $di so it needs its value
-        $this->di = $di;
+        // $this->di = $di;
+        $di = $this->di;
         $this->controller = new WeatherController();
         $this->controller->setDI($this->di);
         $this->controller->initialize();
