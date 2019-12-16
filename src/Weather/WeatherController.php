@@ -39,8 +39,6 @@ class WeatherController implements ContainerInjectableInterface
             "error" => $session->has("error") ? $session->get("error") : "",
             "location" => "",
         ];
-        $dumo = implode(",", $this->di->getActiveServices());
-        var_dump($dumo);
         $page->add("osln/weather/default", $data);
         $session->delete("error");
         return $page->render();
