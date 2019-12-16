@@ -4,10 +4,10 @@
 
 ## Copy the configuration files
 rsync -av vendor/osln/weather/config/di/ ./config/di
-rsync -av vendor/osln/weather/config/router ./config/router/
+rsync -av vendor/osln/weather/config/router/ ./config/router
 
 ## Copy the view files
-rsync -av vendor/osln/weather/view/ view/osln/weather
+rsync -av vendor/osln/weather/view/osln/weather/ ./view/osln/weather
 
 ## Install leaflet
 cd $PWD/vendor/osln/weather/ | npm install
