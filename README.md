@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/oscarLang/weatherModule.svg?branch=master)](https://travis-ci.com/oscarLang/weatherModule)
 # Weather module for the anax framework
 `composer require osln/weather`
 
