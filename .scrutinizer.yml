@@ -6,6 +6,9 @@ filter:
 
 build:
     nodes:
+        environment:
+            php:
+                version: 7.2
         analysis:
             tests:
                 override:
