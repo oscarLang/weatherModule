@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1576576640">
-  <project timestamp="1576576640">
+<coverage generated="1576593503">
+  <project timestamp="1576593503">
     <package name="Osln\Weather">
       <file name="C:\cygwin64\home\oscar\dbwebb-kurser\ramverk1\me\module\src\Weather\CurlRequest.php">
         <class name="Osln\Weather\CurlRequest" namespace="Osln\Weather">
@@ -96,7 +96,7 @@
       </file>
       <file name="C:\cygwin64\home\oscar\dbwebb-kurser\ramverk1\me\module\src\Weather\WeatherController.php">
         <class name="Osln\Weather\WeatherController" namespace="Osln\Weather">
-          <metrics complexity="11" methods="4" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="43" coveredstatements="41" elements="47" coveredelements="43"/>
+          <metrics complexity="11" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="44" coveredstatements="44" elements="48" coveredelements="48"/>
         </class>
         <line num="18" type="method" name="initialize" visibility="public" complexity="1" crap="1" count="3"/>
         <line num="20" type="stmt" count="3"/>
@@ -113,7 +113,7 @@
         <line num="42" type="stmt" count="1"/>
         <line num="43" type="stmt" count="1"/>
         <line num="44" type="stmt" count="1"/>
-        <line num="47" type="method" name="responseActionGet" visibility="public" complexity="3" crap="3.00" count="1"/>
+        <line num="47" type="method" name="responseActionGet" visibility="public" complexity="3" crap="3" count="1"/>
         <line num="49" type="stmt" count="1"/>
         <line num="50" type="stmt" count="1"/>
         <line num="51" type="stmt" count="1"/>
@@ -124,32 +124,33 @@
         <line num="58" type="stmt" count="1"/>
         <line num="59" type="stmt" count="1"/>
         <line num="60" type="stmt" count="1"/>
-        <line num="62" type="stmt" count="0"/>
+        <line num="62" type="stmt" count="1"/>
         <line num="64" type="stmt" count="1"/>
         <line num="66" type="stmt" count="1"/>
         <line num="67" type="stmt" count="1"/>
-        <line num="70" type="method" name="previousActionGet" visibility="public" complexity="3" crap="3.00" count="1"/>
+        <line num="70" type="method" name="previousActionGet" visibility="public" complexity="3" crap="3" count="1"/>
         <line num="72" type="stmt" count="1"/>
         <line num="73" type="stmt" count="1"/>
         <line num="74" type="stmt" count="1"/>
         <line num="76" type="stmt" count="1"/>
         <line num="77" type="stmt" count="1"/>
         <line num="78" type="stmt" count="1"/>
-        <line num="79" type="stmt" count="1"/>
         <line num="80" type="stmt" count="1"/>
         <line num="81" type="stmt" count="1"/>
         <line num="82" type="stmt" count="1"/>
         <line num="83" type="stmt" count="1"/>
-        <line num="85" type="stmt" count="0"/>
-        <line num="88" type="stmt" count="1"/>
-        <line num="89" type="stmt" count="1"/>
+        <line num="84" type="stmt" count="1"/>
+        <line num="85" type="stmt" count="1"/>
+        <line num="87" type="stmt" count="1"/>
+        <line num="90" type="stmt" count="1"/>
         <line num="91" type="stmt" count="1"/>
-        <line num="92" type="stmt" count="1"/>
-        <metrics loc="94" ncloc="75" classes="1" methods="4" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="43" coveredstatements="41" elements="47" coveredelements="43"/>
+        <line num="93" type="stmt" count="1"/>
+        <line num="94" type="stmt" count="1"/>
+        <metrics loc="96" ncloc="77" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="44" coveredstatements="44" elements="48" coveredelements="48"/>
       </file>
       <file name="C:\cygwin64\home\oscar\dbwebb-kurser\ramverk1\me\module\src\Weather\WeatherJsonController.php">
         <class name="Osln\Weather\WeatherJsonController" namespace="Osln\Weather">
-          <metrics complexity="13" methods="4" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="51" coveredstatements="50" elements="55" coveredelements="53"/>
+          <metrics complexity="13" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="51" coveredstatements="51" elements="55" coveredelements="55"/>
         </class>
         <line num="14" type="method" name="initialize" visibility="public" complexity="1" crap="1" count="3"/>
         <line num="16" type="stmt" count="3"/>
@@ -166,7 +167,7 @@
         <line num="39" type="stmt" count="1"/>
         <line num="40" type="stmt" count="1"/>
         <line num="41" type="stmt" count="1"/>
-        <line num="44" type="method" name="responseActionGet" visibility="public" complexity="4" crap="4.00" count="1"/>
+        <line num="44" type="method" name="responseActionGet" visibility="public" complexity="4" crap="4" count="1"/>
         <line num="46" type="stmt" count="1"/>
         <line num="47" type="stmt" count="1"/>
         <line num="48" type="stmt" count="1"/>
@@ -176,7 +177,7 @@
         <line num="55" type="stmt" count="1"/>
         <line num="56" type="stmt" count="1"/>
         <line num="57" type="stmt" count="1"/>
-        <line num="59" type="stmt" count="0"/>
+        <line num="59" type="stmt" count="1"/>
         <line num="61" type="stmt" count="1"/>
         <line num="62" type="stmt" count="1"/>
         <line num="64" type="stmt" count="1"/>
@@ -206,9 +207,9 @@
         <line num="95" type="stmt" count="1"/>
         <line num="97" type="stmt" count="1"/>
         <line num="99" type="stmt" count="1"/>
-        <metrics loc="101" ncloc="86" classes="1" methods="4" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="51" coveredstatements="50" elements="55" coveredelements="53"/>
+        <metrics loc="101" ncloc="86" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="51" coveredstatements="51" elements="55" coveredelements="55"/>
       </file>
     </package>
-    <metrics files="6" loc="335" ncloc="295" classes="6" methods="17" coveredmethods="14" conditionals="0" coveredconditionals="0" statements="153" coveredstatements="150" elements="170" coveredelements="164"/>
+    <metrics files="6" loc="337" ncloc="297" classes="6" methods="17" coveredmethods="17" conditionals="0" coveredconditionals="0" statements="154" coveredstatements="154" elements="171" coveredelements="171"/>
   </project>
 </coverage>

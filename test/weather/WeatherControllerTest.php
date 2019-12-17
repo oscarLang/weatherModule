@@ -35,11 +35,11 @@ class WeatherControllerTest extends TestCase
      */
     public function testIndexAction()
     {
-
         $res = $this->controller->indexAction();
 
         $this->assertInstanceOf("Anax\Response\Response", $res);
         $this->assertInstanceOf("Anax\Response\ResponseUtility", $res);
+
     }
 
     public function testResponseAction()
@@ -47,6 +47,7 @@ class WeatherControllerTest extends TestCase
         // Setup the controller
         // var_dump($this->di);
         $req = $this->di->get("request");
+        $session = $this->di->get("session");
         $req->setGet("location", "158.174.29.41");
 
         $res = $this->controller->responseActionGet();
@@ -58,6 +59,11 @@ class WeatherControllerTest extends TestCase
         $res = $this->controller->responseActionGet();
         $this->assertInstanceOf("Anax\Response\Response", $res);
         $this->assertInstanceOf("Anax\Response\ResponseUtility", $res);
+
+        $req->setGet("location", "asddadasdaddadddadadsdsadadsaddassdadad");
+        $res = $this->controller->responseActionGet();
+        $error = $session->get("error");
+        $this->assertEquals("Could not find this location", $error);
     }
 
     public function testPreviousAction()
@@ -65,6 +71,7 @@ class WeatherControllerTest extends TestCase
         // Setup the controller
         // var_dump($this->di);
         $req = $this->di->get("request");
+        $session = $this->di->get("session");
         $req->setGet("location", "158.174.29.41");
 
         $res = $this->controller->previousActionGet();
@@ -76,5 +83,11 @@ class WeatherControllerTest extends TestCase
         $res = $this->controller->previousActionGet();
         $this->assertInstanceOf("Anax\Response\Response", $res);
         $this->assertInstanceOf("Anax\Response\ResponseUtility", $res);
+
+        $req->setGet("location", "asddadasdaddadddadadsdsadadsaddassdadad");
+        $res = $this->controller->previousActionGet();
+
+        $error = $session->get("error");
+        $this->assertEquals("Could not find this location", $error);
     }
 }

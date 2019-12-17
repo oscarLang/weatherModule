@@ -75,6 +75,8 @@ class WeatherController implements ContainerInjectableInterface
 
         $data = $this->di->curl->fetch($url);
         $forecast = null;
+        $month = null;
+        
         if (isset($data["latitude"])) {
             $forecast = $this->di->weather->forecast($data["latitude"], $data["longitude"]);
             $month = $this->di->weather->getLastMonth($data["latitude"], $data["longitude"]);

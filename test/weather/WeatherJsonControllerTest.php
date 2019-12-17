@@ -59,6 +59,12 @@ class WeatherJsonControllerTest extends TestCase
 
         $res = $this->controller->responseActionGet();
         $this->assertIsArray($res);
+
+        $req->setGet("location", "asddadasdaddadddadadsdsadadsaddassdadad");
+
+        $res = $this->controller->responseActionGet();
+        $this->assertIsArray($res);
+        $this->assertEquals("Could not find this location", $res[0][0]);
     }
 
     public function testPreviousAction()
