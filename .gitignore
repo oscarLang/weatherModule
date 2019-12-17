@@ -1,7 +1,6 @@
 /.bin
 /build
 /vendor
-/cache
 memory::
 composer.lock
 /config/ipstack.php
